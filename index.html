@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="ShortForm is a Framer template built for short form content agencies that are looking to increase their conversion rate, showcase their work and boost their brand credibility.">
+    <meta name="keywords" content="HTML, CSS, bootstrap, swiper, slick, aos, animation, JavaScript">
+    <meta name="author" content="John Doe">
+    <title>Wize to Framer</title>
+    <!-- favicon----------->
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f47b.svg" type="image/x-icon">
+    <!-- bootstrap icon- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- font----------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- swiper-------- --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- main css------- -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- responsive----- -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- header----------------->
+    <header>
+        <div class="headertop text-center fixed-top">
+            <a href="#footer" class="top-a">Accepting 4 new clients. Get started -></a>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container container-wrapper p-4">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.svg" alt="" width="77px">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler_icon">
+                        <i class="bi bi-list"></i>
+                    </span>
+                </button>
+                <div class="navcol collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-md-5 align-items-center py-4 py-lg-0">
+                        <li class="nav-item">
+                            <a class="navlink" aria-current="page" href="#heroservice">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="#work">Our work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="#case">Case studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="#process">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="#faq">FAQ</a>
+                        </li>
+                        <button class="primary-btns d-block d-lg-none d-inline-block mx-auto mt-3">
+                            <a href="https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2F" target="_blank" class="p_ancor">Schedule a Call</a>
+                        </button>
+                    </ul>
+                </div>
+                <button class="primary-btns d-none d-lg-block d-inline-block">
+                    <a href="https://login.framer.com/?origin=framer-web&redirect=https%3A%2F%2Fframer.com%2Fprojects%2F" target="_blank" class="p_ancor">Schedule a Call</a>
+                </button>
+            </div>
+        </nav>
+        <!-- ===tools/gadgets== -->
+        <!-- mode----- -->
+        <div class="themebar">
+            <i class="bi bi-brightness-high"></i>
+            <i class="bi bi-brightness-high-fill d-none"></i>
+        </div>
+        <!-- framer---- -->
+        <a href="Framer.html" class="framer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 11 16">
+                <path d="M 11 0 L 11 5.333 L 5.5 5.333 L 0 0 Z M 0 5.333 L 5.5 5.333 L 11 10.667 L 5.5 10.667 L 5.5 16 L 0 10.667 Z" fill="">
+                </path>
+            </svg>
+            Made in Framer
+        </a>
+    </header>
+
+    <!-- main------------------->
+    <main>
+        <!-- hero section------->
+        <div id="hero" class="">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <h6>For Content Creators & Entrepreneurs</h6>
+                    <h1>Explode your brand with short-form content</h1>
+                    <p>We help content creators and entrepreneurs drastically increase their reach by automating their short-form content production.</p>
+                    <div class="text-center">
+                        <a href="#" class="secondBtn d-inline-block">Book your free audit call</a>
+                    </div>
+                    <div class="heroThumb-text">
+                        <div class="hero_thumb d-flex justify-content-center">
+                            <div class="h-img">
+                                <img src="./assets/images/heroimg/sopImg1.jpg" alt="heroyhumb">
+                            </div>
+                            <div class="h-img">
+                                <img src="./assets/images/heroimg/sopImg2.jpg" alt="heroyhumb">
+                            </div>
+                            <div class="h-img">
+                                <img src="./assets/images/heroimg/sopImg3.jpg" alt="heroyhumb">
+                            </div>
+                            <div class="h-img">
+                                <img src="./assets/images/heroimg/sopImg4.jpg" alt="heroyhumb">
+                            </div>
+                        </div>
+                        <h5>Generated <span>1 Billion+ views</span> across social platforms</h5>
+                        <p>For people like Amanda James, Fred Bellingham, and more...</p>
+                    </div>
+                </div>
+                <div class="heroVideo">
+                    <h5>Watch this video to learn how we do it 👇</h5>
+                    <div class="video w-100">
+                        <iframe id="Uplay" src="https://www.youtube.com/embed/ebtzVGVVHhA"
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer;   autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                        <div class="videolayer">
+                            <i class="bi bi-youtube"></i>
+                        </div>
+                    </div>
+                    <a href="#" class="vidbtn">Get Started 👉</a>
+                </div>
+                <div class="hero-counter">
+                    <div class="counter-item">
+                        <span>10K+</span>
+                        <h4>Videos edited</h4>
+                    </div>
+                    <div class="counter-item">
+                        <span>1.8M+</span>
+                        <h4>Followers Added</h4>
+                    </div>
+                    <div class="counter-item">
+                        <span>15</span>
+                        <h4>Viral Brands</h4>
+                    </div>
+                    <div class="counter-item">
+                        <span>1B+</span>
+                        <h4>Views Generated</h4>
+                    </div>
+                </div>
+                <div class="hero-service" id="heroservice">
+                    <div class="service-left">
+                        <h4>Services</h4>
+                        <h2>How we automate your brand's growth</h2>
+                        <p>
+                            We explode our client's brands by utilizing skills and methods that help us get people hooked, and show them what they want to see.
+                        </p>
+                        <a href="#" class="secondBtn d-inline-block">Speak to us today</a>
+                        <div class="clock d-flex gap-2 my-2">
+                            <i class="bi bi-stopwatch"></i>
+                            <p>No-pressure 30 minute audit call</p>
+                        </div>
+                    </div>
+                    <div class="service-left service-right">
+                        <div class="v-editing">
+                            <i class="bi bi-check-lg"></i>
+                            <h3>
+                                Video editing
+                           </h3>
+                           <p>
+                            We edit your long form content into engaging short form videos that use techniques for grabbing user's attention. 
+                           </p>
+                        </div>
+                        <div class="v-editing">
+                            <i class="bi bi-check-lg"></i>
+                            <h3>
+                                Thumbnail creation
+                           </h3>
+                           <p>
+                            The thumbnail is very important for CTR, and we strive to optimize each video with the best thumbnail possible.
+                           </p>
+                        </div>
+                        <div class="v-editing">
+                            <i class="bi bi-check-lg"></i>
+                            <h3>
+                                Upload scheduling
+                           </h3>
+                           <p>
+                            Forget about manually uploading and wondering if you've scheduled the posts each month. We got you.
+                           </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="work" id="work">
+                    <div class="work-heading text-center">
+                        <h4>Our work</h4>
+                        <h2>A sample of our work...</h2>
+                    </div>
+                    <div class="swork mx-lg-5">
+                        <button class="swipBtn d-none d-lg-block"><i class="bi bi-chevron-left fs-3"></i></button>
+                        <button class="swipBtn2 d-none d-lg-block"><i class="bi bi-chevron-right fs-3"></i></button>
+                        <div class="swiper mySwiper">
+                            <div class="our-work swiper-wrapper">
+                                <div class="work-type swiper-slide">
+                                    <video src="https://framerusercontent.com/modules/assets/5kFgeIElaQbXeYee8w4bekfeplo~LHp4vHzJOMEq7kJZOwipm9A5ICfGwt-rPOJGsI-VZfw.mp4" loop="" poster="https://framerusercontent.com/images/9YXvL5BjQ57cLJ3DAYeC38wQmA8.png" controls="" playsinline="" style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+                                </div>
+                                <div class="work-type swiper-slide">
+                                    <video src="https://framerusercontent.com/modules/assets/byJnw1gzUjMcQHCXvkrxumr8Y~H2DuNwWx19C9s01oNQnyk7ZsY9J9OgaxOB7XCPtvHbY.mp4" loop="" poster="https://framerusercontent.com/images/72Du2dw6WJGA0nxvrYuwImsIg.png" controls="" playsinline="" style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+                                </div>
+                                <div class="work-type swiper-slide">
+                                    <video src="https://framerusercontent.com/modules/assets/j5HEcEAH93nlPZBr2tr7T5KH0e4~lDPouB_OgVQ7l1utzdzYcgnckJjvqDObWIr0ChXPNFg.mp4" loop="" poster="https://framerusercontent.com/images/MJogGZqehWlW9mgxxVW33oyLyXs.png" controls="" playsinline="" style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+                                </div>
+                                <div class="work-type swiper-slide">
+                                    <video src="https://framerusercontent.com/modules/assets/byJnw1gzUjMcQHCXvkrxumr8Y~H2DuNwWx19C9s01oNQnyk7ZsY9J9OgaxOB7XCPtvHbY.mp4" loop="" poster="https://framerusercontent.com/images/72Du2dw6WJGA0nxvrYuwImsIg.png" controls="" playsinline="" style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="profile-review" id="case">
+                    <div class="profile">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="profile1">
+                        <h6>Streamer TikTok Growth</h6>
+                        <span class="profile-txt">0 to 150,000 TikTok followers in under 60 days for a gaming Twitch Streamer</span>
+                        <a href="#">Get the same results -></a>
+                        <div class="profile-gazette">
+                            <span>
+                                <h2>12M+</h2>
+                                <h6>Views generated</h6>
+                            </span>
+                            <span>
+                                <h2>150K+</h2>
+                                <h6>Followers gained</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics" style="width: 205px;">
+                    </div>
+                    <div class="profile1">
+                        <h6>YouTube Channel Growth</h6>
+                        <span class="profile-txt">Added 500k YouTube Shorts views in 30 days for a self-development YouTuber</span>
+                        <a href="#">Get the same results -></a>
+                        <div class="profile-gazette">
+                            <span>
+                                <h2>16</h2>
+                                <h6>Videos uploaded</h6>
+                            </span>
+                            <span>
+                                <h2>500,000</h2>
+                                <h6>Views generated</h6>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="profile1">
+                        <h6>Instagram Growth</h6>
+                        <span class="profile-txt">1,240 to 14,530 followers in 90 days, using Instagram Reels</span>
+                        <a href="#">Get the same results -></a>
+                        <div class="profile-gazette">
+                            <span>
+                                <h2>7.8M+</h2>
+                                <h6>Reels views</h6>
+                            </span>
+                            <span>
+                                <h2>13k</h2>
+                                <h6>Followers added</h6>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="anim-main">
+                <div class="work-animation">
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                </div>
+                <div class="anim-right">
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box">
+                        <img src="./assets/images/heroimg/profile.webp" alt="analytics">
+                    </div>
+                    <div class="anim-box x-box">
+                        <img src="./assets/images/heroimg/analytics.webp" alt="analytics">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- process------------>
+        <section id="process">
+            <div class="process-details">
+                <h4>Our Process</h4>
+                <h2>The steps to going viral</h2>
+            </div>
+            <div class="process-inner">
+                <span>01</span>
+                <h3>Book your free discovery call</h3>
+                <p>
+                    First, we'd need to get to know each other and see if our services can be useful to you. To get started, you'd have to book your free call with us by clicking the button below 👇
+                </p>
+                <div class="processbtn">
+                    <a href="#" class="secondBtn">Speak to us today</a>
+                </div>
+                <div class="clock d-flex gap-2 mt-2">
+                    <i class="bi bi-stopwatch"></i>
+                    <p class="mb-0">No-pressure 30 minute audit call</p>
+                </div>
+            </div>
+            <div class="process-inner">
+                <span>02</span>
+                <h3>Onboarding + strategy session</h3>
+                <p>
+                    If we're a fit, and we think we can help you grow your brand, we can get started! The first step of working together would be an onboarding call, where we'll show you what to expect, and a strategy session, outlining what we plan on doing with your content.
+                </p>
+            </div>
+            <div class="process-inner">
+                <span>03</span>
+                <h3>We get to work</h3>
+                <p>
+                    With the strategy in place, it's now time to execute. We will download and curate all of your content, edit it and spread it across all social channels we've agreed on using.
+                </p>
+            </div>
+            <div class="process-inner">
+                <span>04</span>
+                <h3>Constant optimization</h3>
+                <p>
+                    With time we will notice what does well and what doesn't. And, of course, we will double down on what works and continue optimizing the content for maximum reach!
+                </p>
+                <div class="processbtn pt-1">
+                    <a href="#" class="secondBtn">Get Started</a>
+                </div>
+                <div class="clock d-flex gap-2 mt-2">
+                    <i class="bi bi-stopwatch"></i>
+                    <p class="mb-0">No-pressure 30 minute audit call</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials------->
+        <section id="testimonials">
+            <div class="container">
+                <div class="testimonial-title">
+                    <h4>testimonoals</h4>
+                    <h2>Hear from our clients</h2>
+                </div>
+                <div class="swiper mySwiper1">
+                    <div class="testimonial-wrapper swiper-wrapper gap-lg-3">
+                        <div class="testimonial-item swiper-slide">
+                            <div class="testi-icon d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>200 to 34k followers in 3 months</h3>
+                            <p>
+                                "Three months ago me and my team decided it was time to outsource content production. We landed on *Agency* and we couldn't have made a better choice!"
+                            </p>
+                            <div class="testimonial-authore">
+                                <p>James Williams</p>
+                                <p class="test-p">Founder, JW Slides</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item swiper-slide">
+                            <div class="testi-icon d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>3M+ views in 6 months obviously</h3>
+                            <p>
+                                "Three months ago me and my team decided it was time to outsource content production. We landed on *Agency* and we couldn't have made a better choice!"
+                            </p>
+                            <div class="testimonial-authore">
+                                <p>James Williams</p>
+                                <p class="test-p">Founder, JW Slides</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-item swiper-slide">
+                            <div class="testi-icon d-flex">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h3>200 to 34k followers in 3 months</h3>
+                            <p>
+                                "In just 3 months, they took our TikTok and grew it by 34,000 followers! Sales have been outstanding ever since we started working with these guys."
+                            </p>
+                            <div class="testimonial-authore">
+                                <p>James Williams</p>
+                                <p class="test-p">Founder, JW Slides</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ---------------->
+        <section id="faq">
+            <div class="faq-title text-center my-2">
+                <h4>FAQ</h4>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-inner">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <div class="acor-text-icon">
+                            <span>How many videos can i expected per month?</span>
+                            <span><i class="bi bi-chevron-down"></i></span>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <div class="acor-text-icon">
+                                <span>What is needed from my side?</span>
+                                <span><i class="bi bi-chevron-down"></i></span>
+                            </div>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"   aria-expanded="false" aria-controls="flush-collapseThree">
+                            <div class="acor-text-icon">
+                                <span>What is the priching per month?</span>
+                                <span><i class="bi bi-chevron-down"></i></span>
+                            </div>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- audit call--------->
+        <section id="audit-call">
+            <div class="container">
+                <div class="audit-wrapper">
+                    <div class="audit-item">
+                        <h4>GET STARTED</h4>
+                        <h2>Book your free audit call</h2>
+                        <div class="hero_thumb">
+                            <div class="h-img">
+                                <img src="./assets/images/heroimg/sopImg1.jpg" alt="heroyhumb">
+                            </div>
+                            <div class="clock">
+                                <h4 class="audt-p">Schedule your call with James</h4>
+                                <div class="call-time">
+                                    <i class="bi bi-clock-history"></i>
+                                    <p>No-pressure 30 minute audit call</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            The goal of this call is to get to know you and your business, and see if we can help you achieve your goals. Find a slot that works for you on the Calendar and let's talk!
+                        </p>
+                        <div class="audit-agency pt-3">
+                            <h4>
+                                This call is perfect for:
+                            </h4>
+                            <ul>
+                                <li>
+                                    <span>
+                                        <i class="bi bi-check-lg"></i>
+                                    </span> 
+                                    <span>
+                                        Creators and brands looking to grow their brand by repurposing their long-form content
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="bi bi-check-lg"></i>
+                                    </span> 
+                                    <span>
+                                        Businesses looking to increase their reach, improve conversions, and increase warm leads through viral content
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <i class="bi bi-check-lg"></i>
+                                    </span> 
+                                    <span>
+                                        Creators and brands looking to get viral content done for them on auto-pilot
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="audit-main">
+                        <!-- Calendly inline widget begin -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/tinaberry112188?primary_color=34aba3" style="min-width:320px;   height:650px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- wize--------------->
+        <section id="wize">
+            <div class="container">
+                <div class="end-details">
+                    <div class="wize-img">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </div>
+                    <h1 class="viral">
+                        Ready to <span>Go Viral?</span>
+                    </h1>
+                    <p>Book your free discovery call now, and let's get started.</p>
+                </div>
+                <a href="#" class="viral-btn">Book your free discovery call now -></a>
+            </div>
+        </section>
+    </main>
+
+     <!-- footer---------------->
+    <footer id="footer">
+        <div class="container">
+            <div class="f-inner">
+                <div class="img">
+                    <a href="#"><img src="./assets/images/logo.svg" alt=""></a>
+                </div>
+                <p>Copyright © 2023 Wize Design. All rights reserved.</p>
+                <div class="foot-icon">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- bootstrap------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery 1.12----------- -->
+    <script src="./assets/code.jquery.com_jquery-1.12.4.min.js"></script>
+    <!-- swi[per=====] -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- calendly form----->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- main scripts------>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
