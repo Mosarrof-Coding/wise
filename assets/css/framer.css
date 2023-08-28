@@ -21,8 +21,10 @@
     --ff0066: #ff0066;
     --fe0222: #fe0222;
     --C9900ff: #9900ff;
+    --purpleTrp: #9900ff4a;
     --C6600ff: #6600ff;
     --C1300ff: #1300ff;
+    --blueTrp: #1100ff4a;
     --C0099ff: #0099ff;
     --C00ccff: #00ccff;
     --C22dddd: #22dddd;
@@ -588,6 +590,72 @@ nav{
 
 /* =========Creative-portfolio=========== */
 #creative-portfolio{
-    height: 100vh;
-    background-color: var(--C9900ff);
+    background: linear-gradient(to right, var(--blueTrp), var(--purpleTrp));
+}
+#creative-portfolio .radial{
+    padding: 160px 0 50px 0;
+    background: radial-gradient(182% 69% at 60% 9%,#ffffff 0%,#ffffff 28%,#ffffffe0 46%,#ffffff00 99%);
+}
+#creative-portfolio .cf-main{
+    background-color: var(--fff);
+    outline: 5px solid var(--dark00);
+    border-radius: 5px;
+}
+#creative-portfolio .cf-main .swip-caption{
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+    background-color: var(--blueTrp);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#creative-portfolio .cf-main .swip-caption span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#creative-portfolio .cf-main .cf-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    gap:0;
+}
+#creative-portfolio .cf-main .cf-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dark22);
+    padding: 10px;
+    
+}
+#creative-portfolio .cf-main .cf-header .cf-header-left{
+    display: flex;
+    gap: 20px;
+}
+#creative-portfolio .cf-main .cf-header .cf-header-left .cf-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 10px;
+    line-height: 0;
+    border: 2px solid var(--trpDark);
+    transition: all linear .3s;
+    cursor: pointer;
+}
+#creative-portfolio .cf-main .cf-header .cf-header-left .cf-btn:last-child{
+    color: var(--C0099ff);
+    font-weight: 600;
+}
+#creative-portfolio .cf-main .cf-header .cf-header-left .cf-btn:hover{
+    box-shadow: 1px 7px 10px -4px var(--dark99);
+}
+/* aside------- */
+#creative-portfolio .cf-main .cf-wrapper aside{
+}
+#creative-portfolio .cf-main .cf-wrapper .cf-swiper-main{
+    background-color: var(--dark99);
+    text-align: center;
 }

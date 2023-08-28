@@ -1,17 +1,15 @@
 // hero videoplayer-------
-$(function(){
-  let videolayer = document.querySelector('.videolayer');
-  let Uplay = document.querySelector('#Uplay');
-  videolayer.addEventListener('click', ()=>{
+let videolayer = document.querySelector('.videolayer');
+let Uplay = document.querySelector('#Uplay');
+videolayer.addEventListener('click', ()=>{
+  setTimeout(() => {
+    videolayer.classList.add('anim');
     setTimeout(() => {
-      videolayer.classList.add('anim');
-      setTimeout(() => {
-        videolayer.style.display = 'none';
-      }, 2000);
-    }, 1000);
-    Uplay.src += '?autoplay=1';
-  });
-})
+      videolayer.style.display = 'none';
+    }, 2000);
+  }, 1000);
+  Uplay.src += '?autoplay=1';
+});
 
 // themechange-----------
 let themebar = document.querySelector('.themebar');
@@ -111,3 +109,10 @@ var swiper = new Swiper('.mySwiper1', {
     },
 });
 
+// framer-slider---
+$('.meWrapper').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
